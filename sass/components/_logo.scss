@@ -15,7 +15,12 @@
     color: $accent-color;
 
 }
-.logotip{
+.footer-logo{
+  color: $primery-background;
+
+}
+.logotip-footer{
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }

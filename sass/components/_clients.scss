@@ -1,14 +1,15 @@
 .clients{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+display: flex;
+flex-wrap: wrap;
+
+  align-items: center;
     margin: -15px;
 
 
 
 &__item{
     margin: 15px;
-    width: 100%;
+    width: 210px;
 }
 
 
@@ -116,4 +117,4 @@
     border: 1px solid var(--accent-color);
     border-radius: 4px;
   }
-}
+}*/

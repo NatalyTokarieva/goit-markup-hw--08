@@ -2,36 +2,30 @@ footer{
     background-color: $primery-bg--color;
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 480px;
+    text-align: center;
  }
  .mail-logo{
+display: inline;
 
-
-    &__footer{
-        font-family: 'Raleway',sans-serif;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.16;
-        text-decoration: none;
-        cursor: default;
-
-        color: $primery-background;
-        margin-bottom: 20px;
-    }
+   
 }
 .mail-list{
+    margin-top: 20px;
 
-
-    &__item:not(:last-child){
-        margin-bottom:9px ;
-
-    }
-   
+   &__item{
+       margin-bottom: 8px;
+   }
+   &__item:last-child{
+       margin-bottom: none;
+   }
     &__link{
         text-decoration: none;
         cursor: default;
         color: $primery-background;
         font-style: normal;
-        margin-bottom: 20px;
+        margin-bottom: 8px;
+     
     }
 
     &__link-footer{
@@ -39,6 +33,7 @@ footer{
         font-style: normal;
         cursor: default;
         color: $connect-color;
+        margin-bottom: 8px;
     }
 }
 .footer-text{
@@ -48,13 +43,15 @@ footer{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $primery-background;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+
     }
     
 .footer-icon{
-  
+        display: flex;
+        align-items: center;
         justify-content: center;
-      
+         margin-bottom: 60px;
     
     &__item{
         width: 44px;
@@ -93,23 +90,26 @@ footer{
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 20px;
+
     color:$primery-background;
-    
+
     font-weight: 700;
     }
 }
 .mail-form input{
-   width: 358px;
+   width: 450px;
    height: 50px;
    border: 1px solid rgba(255, 255, 255, 0.3);
    color:$primery-background;
+
 
    border-radius: 4px;
    background-color: $primery-bg--color;
    margin: 0;
    padding: 0;
+   margin-top: 20px;
    padding-left: 16px;
+ 
 
   
 }
@@ -122,9 +122,9 @@ footer{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    
     padding-top: 15px;
     padding-bottom: 15px;
+ 
 }
 .submit-form{
     position: relative;
@@ -133,7 +133,7 @@ footer{
 .submit{
     width: 200px;
     height: 50px ;
-    margin-left: 12px;
+ 
     background:$accent-color;
     border:$accent-color;
     border-radius: 4px;
@@ -150,13 +150,15 @@ footer{
      line-height: 1.88;
  
      letter-spacing: 0.06em;
+     margin-top: 20px;
+
 }
 
  .submit::after{
-     content:url(../images/airplane.svg);
+     content:url(/images/plane.svg);
      width: 24px;
      height: 24px;
-     margin-left: 10px;
+
  
 }
 

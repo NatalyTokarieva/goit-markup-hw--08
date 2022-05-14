@@ -1,7 +1,12 @@
-
+.header{
+    border: transparent;
+}
+.page-header{
+    position: relative;
+}
 .header .nav{
     
-    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
