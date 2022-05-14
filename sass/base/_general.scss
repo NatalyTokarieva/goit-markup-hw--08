@@ -7,11 +7,15 @@ body{
     letter-spacing: 0.03em;
    
 }
+html {
+    box-sizing: border-box;
+    scroll-behavior: inherit;
+}
 .container{
     max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+    margin: 0 ;
  
     
 }

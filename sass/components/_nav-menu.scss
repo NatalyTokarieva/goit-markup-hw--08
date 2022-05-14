@@ -1,0 +1,59 @@
+.site-nav{
+    padding-left: 40px;
+    padding-top: 48px;
+}
+
+.site-nav__link{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 1.175;
+text-decoration: none;
+letter-spacing: 0.02em;
+color: $primery-color;
+transition: color 250ms $cubic;
+}
+
+.site-nav__link:hover{
+    color: $accent-color;
+}
+.site-nav__item{
+    margin-bottom: 32px;
+}
+.auth-nav__phone{
+    
+font-weight: 500;
+font-size: 34px;
+line-height: 1.17;
+letter-spacing: 0.02em;
+color: $accent-color;
+margin-top: 302px;
+}
+
+.auth-nav__mail{
+    font-weight: 500;
+font-size: 24px;
+line-height: 1.16;
+letter-spacing: 0.02em;
+color: $connect-color;
+margin-bottom: 32px;
+}
+.socials{
+    margin-top: 62px;
+}
+.socials__item{
+    text-decoration: none;
+    font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+border-right: 1px solid rgba(33, 33, 33, 0.2);;
+transform: rotate(90deg);
+letter-spacing: 0.02em;
+color: $accent-color;
+padding-right: 10px;
+margin-right: 10px;
+}
+.socials__item:last-child{
+    border: none;
+}

@@ -13,14 +13,55 @@
     </head>
 <body>
     <header class="header">
-        <div class="container">
-          <nav>
-              <div class="logotip"></div>
-            <a lang="en" href="./index.html" class="logo"> <span class="logoweb">Web</span>Studio</a></div>
-            <svg class="icon-header" >
+        <div class="page-header">
+        <div class="container ">
+          <nav class="nav">
+         
+            <a lang="en" href="./index.html" class="logo"> <span class="logoweb">Web</span>Studio</a>
+            
+            <button type="button" 
+            class="menu-btn" 
+            aria-expanded="false" 
+            aria-controls="menu-container" 
+            data-menu-button>
+            
+            <svg width="40"
+            height="40"
+            aria-label="Переключатель мобильной кнопки" >
                 <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
                 <use class="icon-close" href="./images/icons.svg#icon-close-1"></use>
-            </svg>
+            </svg></button>
+            <div class="menu-container" id="menu-container" data-menu>
+               
+            
+            <div class="nav-menu">
+                <ul class=" site-nav list">
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="contacts">
+                <ul class=" auth-nav list">
+                
+                    <li class="auth-nav__phone ">
+                        +38 0961111111
+                         </li>
+                    <li class=" auth-nav__mail">
+                     
+                        info@devstudio.com
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="socials">
+                <a class="socials__item" href="">Instagram</a>
+                <a class="socials__item" href="">Twitter</a>
+                <a class="socials__item" href="">Facebook</a>
+                <a class="socials__item" href="">LinkedIn</a>
+            </div>
+            </div>
+
           </nav>
         </div>
     </header>
@@ -78,6 +119,7 @@
 
     </footer>
 
-    
+    <script src="./js/menu.js"></script>
+    <script src="./js/modals.js"></script>
 </body>
 </html>
