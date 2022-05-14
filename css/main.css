@@ -101,7 +101,13 @@ img {
 }
 
 .header {
-  border: transparent;
+  border-bottom: 1px solid #ececec;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .page-header {
@@ -151,6 +157,14 @@ img {
 .hero {
   background-color: #2F303A;
   text-align: center;
+  padding-top: 118px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0 200px;
+  }
 }
 .hero__title {
   color: #ffffff;
@@ -160,19 +174,65 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   max-width: 360px;
-  padding-top: 118px;
   margin: 0 auto;
   margin-bottom: 30px;
+  padding-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 30px;
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .overlay {
-  width: 480px;
   height: 400px;
   outline: 1px solid #212121;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/overlay480.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay480.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay480-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Overlay768.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay768-2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay1200-1x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Overlay1200.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+  }
 }
 
 .button {
@@ -436,7 +496,7 @@ img {
 
 .foster {
   width: 106px;
-  height: 48px;
+  height: 106px;
 }
 
 footer {
