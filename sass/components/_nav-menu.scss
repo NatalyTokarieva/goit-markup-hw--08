@@ -3,9 +3,9 @@
 .site-nav{
     padding-left: 40px;
     padding-top: 48px;
-}
 
-.site-nav__link{
+
+&__link{
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
@@ -14,15 +14,19 @@ line-height: 1.175;
 text-decoration: none;
 letter-spacing: 0.02em;
 color: $primery-color;
+cursor: pointer;
 transition: color 250ms $cubic;
+
+
 }
 
-.site-nav__link:hover{
+&__link:hover,
+ &__link:focus{
     color: $accent-color;
 }
-.site-nav__item{
+&__item{
     margin-bottom: 32px;
-}
+}}
 .auth-nav__phone{
     
 font-weight: 500;
@@ -61,3 +65,110 @@ margin-right: 10px;
 }
 }
 
+
+@media screen and (min-width: 600px) {
+    .site-nav-second{
+        display: flex;
+    
+        white-space: nowrap;
+        
+    &__link{
+            display: block;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            margin-right: 50px;
+            color:$primery-color;
+    
+            text-decoration: none;
+            cursor: pointer;
+    
+            transition: color 250ms $cubic;
+            position: relative;
+            }
+    
+            &__link:hover,
+            &__link:focus {
+                color: $accent-color;
+        }}
+    .current::after {
+        content:'';
+    
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: $accent-color;
+            border-radius: 2px;
+    
+    
+        }
+    .auth-nav-second{
+        display: flex;
+        white-space: nowrap;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        cursor: default;
+    
+        &__item {
+            margin-left: 50px;
+        }
+    
+        &__link{
+            display: block;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            color: $connect-color;
+            text-decoration: none;
+            cursor: pointer;
+    
+            transition: color 250ms $cubic;
+    
+        }
+    
+        &__link:hover,
+        &__link:focus{
+            color: $accent-color;
+        }
+        }
+    .header .current{
+        color: $accent-color;
+        
+        
+    }
+    .icon{
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        color: $connect-color;
+    
+        transition: color 250ms $cubic;
+    
+        
+    
+    &:hover{
+        color: $accent-color;
+        
+    }
+    
+        &__envelope{
+            width: 20px;
+            height: 16px;
+            fill:currentColor;
+            margin-right: 10px;
+            
+        }
+    
+    
+        &__smartphone{
+            width: 16px;
+            height: 22px;
+            fill:currentColor;
+            margin-right: 10px;
+        }
+        }
+    
+    
+  }
