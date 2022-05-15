@@ -45,6 +45,7 @@ html {
 @media screen and (mix-width: 1200px) {
   .container {
     width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -61,8 +62,17 @@ h1, h2, h3, p {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
+}
+@media screen and (max-width: 1199px) {
+  img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  img {
+    max-width: 100%;
+  }
 }
 
 .section {
