@@ -15,25 +15,35 @@
  }
 
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
      .second-nav{
        display: flex;
        align-items: center;
-       justify-content: center;
+       justify-content: space-evenly;
        height: 80px;
 
      }}
+     @media screen and (min-width: 1200px) {
+      .second-nav{
+       
+        justify-content: space-between;
+        height: 93px;
+ 
+      }}
+
+
 
      
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       .header{
         font-weight: 500;
+        font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         font-family: 'Roboto';
 font-style: normal;
 
-font-size: 14px;
+
 
        
         

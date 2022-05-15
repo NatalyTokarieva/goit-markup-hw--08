@@ -117,6 +117,11 @@ img {
   justify-content: space-around;
 }
 
+@media screen and (min-width: 768px) {
+  .logotip {
+    padding-right: 88px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logotip {
     padding-right: 93px;
@@ -135,22 +140,28 @@ img {
     display: flex;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .second-nav {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .second-nav {
+    justify-content: space-between;
+    height: 93px;
+  }
+}
+@media screen and (min-width: 768px) {
   .header {
     font-weight: 500;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     font-family: "Roboto";
     font-style: normal;
-    font-size: 14px;
   }
   .header__inner {
     display: flex;
@@ -425,7 +436,7 @@ img {
   border: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .site-nav-second {
     display: flex;
     white-space: nowrap;
@@ -458,7 +469,7 @@ img {
   }
 
   .auth-nav-second {
-    display: flex;
+    display: block;
     white-space: nowrap;
     justify-content: center;
     align-items: center;
@@ -467,6 +478,8 @@ img {
   }
   .auth-nav-second__item {
     margin-left: 50px;
+    font-size: 12px;
+    line-height: 1.16;
   }
   .auth-nav-second__link {
     display: block;
@@ -480,11 +493,18 @@ img {
   .auth-nav-second__link:hover, .auth-nav-second__link:focus {
     color: #2196F3;
   }
-
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .auth-nav-second {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
   .header .current {
     color: #2196F3;
   }
-
+}
+@media screen and (min-width: 768px) {
   .icon {
     display: inline-flex;
     align-items: center;
@@ -506,6 +526,15 @@ img {
     height: 22px;
     fill: currentColor;
     margin-right: 10px;
+  }
+}
+.section-image {
+  display: none;
+}
+
+@media screen and (max-width: 480) {
+  .second-nav {
+    display: flex;
   }
 }
 .section-commands {

@@ -66,7 +66,7 @@ margin-right: 10px;
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     .site-nav-second{
         display: flex;
     
@@ -105,7 +105,7 @@ margin-right: 10px;
     
         }
     .auth-nav-second{
-        display: flex;
+        display: block;
         white-space: nowrap;
         justify-content: center;
         align-items: center;
@@ -114,6 +114,8 @@ margin-right: 10px;
     
         &__item {
             margin-left: 50px;
+            font-size: 12px;
+            line-height: 1.16;
         }
     
         &__link{
@@ -132,6 +134,13 @@ margin-right: 10px;
         &__link:focus{
             color: $accent-color;
         }
+        }
+
+        @media screen and (min-width:1200px) {
+            .auth-nav-second{
+                display: flex;
+            }
+            
         }
     .header .current{
         color: $accent-color;
