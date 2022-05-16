@@ -34,17 +34,17 @@ html {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -322,16 +322,18 @@ img {
 }
 
 .feature-section {
-  min-width: 480px;
+  max-width: 480px;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .feature-section {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .feature-section {
-    min-width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -621,17 +623,19 @@ img {
   }
 }
 .section-commands {
-  min-width: 480px;
+  max-width: 480px;
   background-color: #F5F4FA;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .section-commands {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .section-commands {
-    min-width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -726,7 +730,9 @@ img {
 }
 
 .container-clients {
-  min-width: 480px;
+  max-width: 480px;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .container-clients {
@@ -735,7 +741,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .container-clients {
-    min-width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -816,6 +822,8 @@ img {
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
@@ -922,12 +930,24 @@ footer {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .mail-form {
+    display: flex;
+    align-items: flex-end;
+  }
+}
 .mail-form__text {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
+}
+@media screen and (min-width: 1200px) {
+  .mail-form__text {
+    margin-bottom: 20px;
+    text-align: start;
+  }
 }
 
 .mail-form input {
@@ -941,6 +961,13 @@ footer {
   padding: 0;
   margin-top: 20px;
   padding-left: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .mail-form input {
+    width: 358px;
+    margin-right: 12px;
+    margin-left: 93px;
+  }
 }
 
 .mail-form input::-moz-placeholder {
@@ -980,6 +1007,23 @@ footer {
   font-weight: 400;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .mail-form input::-moz-placeholder {
+    width: 358px;
+    margin-right: 12px;
+    margin-left: 93px;
+  }
+  .mail-form input:-ms-input-placeholder {
+    width: 358px;
+    margin-right: 12px;
+    margin-left: 93px;
+  }
+  .mail-form input::placeholder {
+    width: 358px;
+    margin-right: 12px;
+    margin-left: 93px;
+  }
 }
 
 .submit-form {

@@ -1,6 +1,8 @@
 .footer-container{
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
 
     @media screen and (min-width:1200px){ 
     display:flex;
@@ -117,6 +119,11 @@ display: inline;
 }
  .mail-form{
 
+    @media screen and(min-width:1200px) {
+        display: flex;
+        align-items: flex-end;
+        
+    }
    
      &__text{
   
@@ -127,6 +134,14 @@ display: inline;
     color:$primery-background;
 
     font-weight: 700;
+ 
+        @media screen and(min-width:1200px) {
+            margin-bottom: 20px;
+            text-align: start;
+            
+        
+    }
+
     }
 }
 .mail-form input{
@@ -142,6 +157,14 @@ display: inline;
    padding: 0;
    margin-top: 20px;
    padding-left: 16px;
+   
+   @media screen and (min-width:1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-left: 93px;
+
+    
+}
  
 
   
@@ -157,6 +180,13 @@ display: inline;
     font-weight: 400;
     padding-top: 15px;
     padding-bottom: 15px;
+
+    @media screen and (min-width:1200px) {
+        width: 358px;
+        margin-right: 12px;
+        margin-left: 93px;
+        
+    }
  
 }
 .submit-form{
@@ -184,8 +214,10 @@ display: inline;
  
      letter-spacing: 0.06em;
      margin-top: 20px;
+   
+    }
 
-}
+
 
  .submit::after{
      content:url(../images/airplane.svg);
