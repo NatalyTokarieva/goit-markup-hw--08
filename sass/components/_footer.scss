@@ -7,6 +7,19 @@
     @media screen and (min-width:1200px){ 
     display:flex;
     align-items: baseline;
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        max-width: 768px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+     
         
     }
 }
@@ -21,9 +34,18 @@ footer{
         display: flex;
         justify-content: space-around;
         padding-bottom: 60px;
+    
     }
     
 }
+@media screen and (min-width:1200px) {
+    .footer-mail{
+     align-items: baseline;
+    padding-bottom: 0;
+    }
+    
+}
+
 
  .mail-logo{
 display: inline;
@@ -32,6 +54,17 @@ display: inline;
     
 }
 
+&__footer{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: default;
+    display: flex;
+    color: $primery-background;
+    margin-bottom: 20px;
+}
    
 }
 .mail-list{
@@ -40,12 +73,16 @@ display: inline;
 
 @media screen and (min-width:1200px) {
     display: block;
-    
+    text-align: start;
 }
 
    &__item{
        margin-bottom: 8px;
+
+     
    }
+
+
    &__item:last-child{
        margin-bottom: none;
    }
@@ -55,6 +92,8 @@ display: inline;
         color: $primery-background;
         font-style: normal;
         margin-bottom: 8px;
+
+        
      
     }
 
@@ -64,8 +103,22 @@ display: inline;
         cursor: default;
         color: $connect-color;
         margin-bottom: 8px;
+        @media screen and (min-width:1200px) {
+        margin-bottom:none;
+        }
+
     }
 }
+
+@media screen and (min-width:1200px) {
+       .mail-list__item:not(:last-child){
+           margin-bottom: 9px;
+       }    
+       @media screen and (min-width:1200px) {
+        .mail-list__item:last-child{
+            display: flex;
+        } 
+}}
 .footer-text{
     font-weight: 700;
     font-size: 14px;
@@ -78,7 +131,7 @@ display: inline;
 
     @media screen and (min-width:768px) {
         margin-bottom: 20px;
-        
+        text-align: start;
     }
 
     }
@@ -88,6 +141,11 @@ display: inline;
         align-items: center;
         justify-content: center;
          margin-bottom: 60px;
+
+         @media screen and (min-width:1200px) {
+
+             margin-bottom: 0;
+         }
     
     &__item{
         width: 44px;
@@ -116,14 +174,20 @@ display: inline;
     }
 .mail-submit-form{
     text-align: center;
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: flex-end;
+        margin-left: auto ;
+        
+    }
 }
  .mail-form{
 
     @media screen and(min-width:1200px) {
         display: flex;
-        align-items: flex-end;
-        
-    }
+      align-items: flex-end;
+       }
    
      &__text{
   
@@ -134,35 +198,32 @@ display: inline;
     color:$primery-background;
 
     font-weight: 700;
- 
-        @media screen and(min-width:1200px) {
-            margin-bottom: 20px;
-            text-align: start;
-            
-        
-    }
+    @media screen and(min-width:1200px) {
+        margin-bottom: 20px;
+        }}}
 
-    }
-}
+@media screen and (min-width:768px) {
+    .mail-sighn{
+    display: inline-grid;
+    }}
+ 
+
 .mail-form input{
    width: 450px;
    height: 50px;
    border: 1px solid rgba(255, 255, 255, 0.3);
    color:$primery-background;
 
-
    border-radius: 4px;
    background-color: $primery-bg--color;
    margin: 0;
-   padding: 0;
+  padding: 0;
    margin-top: 20px;
    padding-left: 16px;
    
    @media screen and (min-width:1200px) {
     width: 358px;
-    margin-right: 12px;
-    margin-left: 93px;
-
+     margin-top: 0;
     
 }
  
@@ -183,8 +244,7 @@ display: inline;
 
     @media screen and (min-width:1200px) {
         width: 358px;
-        margin-right: 12px;
-        margin-left: 93px;
+      
         
     }
  
@@ -214,15 +274,25 @@ display: inline;
  
      letter-spacing: 0.06em;
      margin-top: 20px;
-   
-    }
 
+     @media screen and (min-width:1200px) {
+         margin-top: 0;
+         margin-left: 12px;
+         
+     }
+     
 
+}
 
  .submit::after{
      content:url(../images/airplane.svg);
      width: 24px;
      height: 24px;
+
+     @media screen and (min-width:1200px) {
+        margin-left: 10px;
+        
+    }
 
  
 }
