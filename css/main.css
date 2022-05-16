@@ -327,12 +327,13 @@ img {
 }
 
 .button-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 .button-list__item {
-  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 .button-list__secondary-button {
   background-color: rgb(245, 244, 250);
@@ -1400,9 +1401,21 @@ footer {
   background-color: #188CE8;
 }
 
-.picture-list {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 480px) {
+  .picture-list {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .picture-list {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .picture-list {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 .picture-list__item {
   width: 370px;
