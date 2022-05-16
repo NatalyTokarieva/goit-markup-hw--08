@@ -1,17 +1,45 @@
-footer{
-    background-color: $primery-bg--color;
+.footer-container{
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 480px;
-    text-align: center;
+
+    @media screen and (min-width:1200px){ 
+    display:flex;
+    align-items: baseline;
+        
+    }
+}
+
+footer{
+    background-color: $primery-bg--color;
+
  }
+
+@media screen and (min-width:768px) {
+    .footer-mail{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 60px;
+    }
+    
+}
+
  .mail-logo{
 display: inline;
+@media screen and (min-width:1200px) {
+    margin-right: 70px;
+    
+}
 
    
 }
 .mail-list{
     margin-top: 20px;
+    text-align: center;
+
+@media screen and (min-width:1200px) {
+    display: block;
+    
+}
 
    &__item{
        margin-bottom: 8px;
@@ -44,6 +72,12 @@ display: inline;
     text-transform: uppercase;
     color: $primery-background;
     margin-bottom: 60px;
+    text-align: center;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 20px;
+        
+    }
 
     }
     
@@ -79,9 +113,8 @@ display: inline;
     }  
     }
 .mail-submit-form{
-    
-        margin-left: auto ;
-    }
+    text-align: center;
+}
  .mail-form{
 
    
@@ -114,7 +147,7 @@ display: inline;
   
 }
 .mail-form input::placeholder{
-  
+    width: 450px;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
