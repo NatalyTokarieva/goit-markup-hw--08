@@ -1,3 +1,18 @@
+.feature-section{
+    min-width: 480px;
+
+    
+@media screen and (min-width: 768px) {
+
+   min-width: 768px;
+
+  }
+  
+@media screen and (min-width: 1200px) {
+min-width: 1200px;
+  }
+
+}
 
 
 .section-title{
@@ -16,15 +31,19 @@
 
 
     @media screen and (min-width: 768px) {
-       display: flex;
-       flex-wrap: wrap;
-     
-   margin: -15px;
-   flex-basis: calc((100% - 60px) / 2);
-    }
+        display: flex;
+        align-items: baseline;
+    
+        flex-wrap: wrap;
+        
+        flex-basis: calc((100% - 60px) / 2);
+        margin: -15px;
+ 
+      }
+       
 
     @media screen and (min-width: 1200px) {
-        display: flex;
+   
         flex-wrap: nowrap;
        
       }
@@ -34,7 +53,7 @@
        margin-bottom: 30px;
         width: 450px;
         
-            }  
+             
       
           @media screen and (min-width: 768px) {
             width: 354px;
@@ -107,5 +126,5 @@
         text-decoration: none;
         line-height: 1.71;
     }
-
+}
     }
