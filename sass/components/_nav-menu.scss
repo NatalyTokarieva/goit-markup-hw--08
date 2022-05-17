@@ -1,8 +1,10 @@
 
-
+    .header .current{
+        color: $accent-color;
+        
+        
+    }
 .site-nav{
-    padding-left: 40px;
-    padding-top: 48px;
 
 
 &__link{
@@ -35,6 +37,7 @@ line-height: 1.17;
 letter-spacing: 0.02em;
 color: $accent-color;
 margin-top: 302px;
+margin-bottom: 32px;
 }
 
 .auth-nav__mail{
@@ -45,6 +48,8 @@ letter-spacing: 0.02em;
 color: $connect-color;
 margin-bottom: 32px;
 }
+
+
 .menu-socials{
     margin-top: 62px;
 
