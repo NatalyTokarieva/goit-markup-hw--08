@@ -34,7 +34,7 @@ html {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    min-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -830,6 +830,12 @@ img {
     margin-right: 0;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .clients__item:last-child {
+    margin-right: 0;
+  }
+}
 .clients__button {
   display: flex;
   justify-content: center;
@@ -847,6 +853,7 @@ img {
     width: 170px;
     height: 92px;
     flex-wrap: wrap;
+    align-content: center;
   }
 }
 .clients__button:hover, .clients__button:focus {
@@ -864,21 +871,21 @@ img {
   height: 48px;
 }
 
+.footer {
+  min-width: 480px;
+}
+
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
+  min-width: 480px;
 }
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
     align-items: baseline;
-  }
-}
-@media screen and (min-width: 1200px) and (min-width: 480px) {
-  .footer-container {
-    max-width: 480px;
   }
 }
 @media screen and (min-width: 1200px) and (min-width: 768px) {
