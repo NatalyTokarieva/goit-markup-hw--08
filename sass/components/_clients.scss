@@ -2,23 +2,23 @@
   min-width: 480px;
   margin-right: auto;
   margin-left: auto;
-  @media screen and (min-width: 768px) {
-        max-width: 768px;
+      @media screen and (min-width: 768px) {
+            max-width: 768px;
 
-  }
-  @media screen and (min-width: 1200px) {
-         max-width: 1200px;
+      }
+      @media screen and (min-width: 1200px) {
+            max-width: 1200px;
 
-}
+    }
 }
 .clients{
      display: flex;
      flex-wrap: wrap;
      align-items: center;
      margin: -15px;
-    @media screen and (min-width: 1200px) {
-      flex-wrap: nowrap;
-      margin-top: 50px;
+        @media screen and (min-width: 1200px) {
+          flex-wrap: nowrap;
+          margin-top: 50px;
     }
 
 
@@ -31,26 +31,26 @@
 //@media screen and (max-width: 767px) {
   //width: 210px;
  // flex-basis: calc((100% - 60px) / 2);}
-@media screen and (min-width: 768px) {
-  //width: 226px;
-  flex-basis: calc((100% - 90px) / 3);
-}
-@media screen and (min-width: 1200px) {
- // width: 170px;
- margin: 0;
-  margin-right: 30px;
-  height: 92px;
+    @media screen and (min-width: 768px) {
+      //width: 226px;
+      flex-basis: calc((100% - 90px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+    // width: 170px;
+    margin: 0;
+      margin-right: 30px;
+      height: 92px;
 
 }}
-@media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px){
 
-&__item:last-child{
-  margin-right: 0;
-}
-}
+   &__item:last-child{
+      margin-right: 0;
+    }
+    }
 
-}
-@media screen and (min-width: 1200px){
+    }
+    @media screen and (min-width: 1200px){
 
 
   .clients__item:last-child{
@@ -81,24 +81,23 @@
     }
      
 }
-&__button:hover,
-&__button:focus{
-    border: 1px solid $accent-color;
-    color: $accent-color;
-    
+    &__button:hover,
+    &__button:focus{
+        border: 1px solid $accent-color;
+        color: $accent-color;
+        
 
-}
-&__icon{
-    width: 106px;
-    height: 106px;
-    fill: currentColor;
-    cursor: pointer;
-    
-}
+    }
+    &__icon{
+        width: 106px;
+        height: 106px;
+        fill: currentColor;
+        cursor: pointer;
+        
+    }
 }
 .foster{
- 
-  height: 48px;
+    height: 48px;
 }
 
 

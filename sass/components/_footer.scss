@@ -33,41 +33,41 @@ footer{
 
  }
 
-@media screen and (min-width:768px) {
-    .footer-mail{
-        display: flex;
-        justify-content: space-around;
-        padding-bottom: 60px;
-    
+    @media screen and (min-width:768px) {
+        .footer-mail{
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 60px;
+        
+        }
+        
     }
-    
-}
-@media screen and (min-width:1200px) {
-    .footer-mail{
-     align-items: baseline;
-    padding-bottom: 0;
-    }
-    
+    @media screen and (min-width:1200px) {
+        .footer-mail{
+        align-items: baseline;
+        padding-bottom: 0;
+        }
+        
 }
 
 
  .mail-logo{
-display: inline;
-@media screen and (min-width:1200px) {
-    margin-right: 70px;
+    display: inline;
+    @media screen and (min-width:1200px) {
+        margin-right: 70px;
     
 }
 
-&__footer{
-    font-family: 'Raleway',sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
-    cursor: default;
-    display: flex;
-    color: $primery-background;
-    margin-bottom: 20px;
+    &__footer{
+        font-family: 'Raleway',sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        text-decoration: none;
+        cursor: default;
+        display: flex;
+        color: $primery-background;
+        margin-bottom: 20px;
 }
    
 }
@@ -75,9 +75,9 @@ display: inline;
     margin-top: 20px;
     text-align: center;
 
-@media screen and (min-width:1200px) {
-    display: block;
-    text-align: start;
+    @media screen and (min-width:1200px) {
+        display: block;
+        text-align: start;
 }
 
    &__item{
@@ -114,9 +114,9 @@ display: inline;
     }
 }
 
-@media screen and (min-width:1200px) {
-       .mail-list__item:not(:last-child){
-           margin-bottom: 9px;
+        @media screen and (min-width:1200px) {
+            .mail-list__item:not(:last-child){
+                margin-bottom: 9px;
        }    
        @media screen and (min-width:1200px) {
         .mail-list__item:last-child{
@@ -206,10 +206,10 @@ display: inline;
         margin-bottom: 20px;
         }}}
 
-@media screen and (min-width:768px) {
-    .mail-sighn{
-    display: inline-grid;
-    }}
+    @media screen and (min-width:768px) {
+        .mail-sighn{
+        display: inline-grid;
+        }}
  
 
 .mail-form input{

@@ -2,13 +2,13 @@
   border-bottom: 1px solid $border-image;
   
 }
-  .second-nav{
+.second-nav{
     display: none;
   }
   
- @media  screen and(max-width:480) {
-   .second-nav{
-     display: flex;
+  @media  screen and(max-width:480) {
+    .second-nav{
+      display: flex;
    
    }
 
@@ -17,11 +17,11 @@
 
 
     @media screen and (min-width: 768px) {
-     .second-nav{
-       display: flex;
-       align-items: center;
-       justify-content: space-evenly;
-       height: 80px;
+       .second-nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 80px;
 
      }}
      @media screen and (min-width: 1200px) {
@@ -42,7 +42,7 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
         font-family: 'Roboto';
-font-style: normal;
+        font-style: normal;
 
 
 
