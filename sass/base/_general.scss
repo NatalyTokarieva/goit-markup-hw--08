@@ -12,12 +12,12 @@ html {
     scroll-behavior: inherit;
 }
 .container{
-
+   min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
  margin-left: auto;
  margin-right: auto;
-max-width: 1200px;
+
  
  @media screen and (min-width: 480px) {
     max-width: 480px;
