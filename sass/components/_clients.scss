@@ -18,36 +18,28 @@
      margin: -15px;
         @media screen and (min-width: 1200px) {
           flex-wrap: nowrap;
-          margin-top: 50px;
+   
     }
 
 
 &__item{
-   // width: 210px;
+
     margin: 15px;
     height: 92px;
     flex-basis: calc((100% - 60px) / 2);
 
-//@media screen and (max-width: 767px) {
-  //width: 210px;
- // flex-basis: calc((100% - 60px) / 2);}
     @media screen and (min-width: 768px) {
-      //width: 226px;
+ 
       flex-basis: calc((100% - 90px) / 3);
     }
     @media screen and (min-width: 1200px) {
-    // width: 170px;
+
     margin: 0;
       margin-right: 30px;
       height: 92px;
 
 }}
-    @media screen and (min-width: 1200px){
 
-   &__item:last-child{
-      margin-right: 0;
-    }
-    }
 
     }
     @media screen and (min-width: 1200px){

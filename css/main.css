@@ -817,7 +817,6 @@ a {
 @media screen and (min-width: 1200px) {
   .clients {
     flex-wrap: nowrap;
-    margin-top: 50px;
   }
 }
 .clients__item {
@@ -835,11 +834,6 @@ a {
     margin: 0;
     margin-right: 30px;
     height: 92px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .clients__item:last-child {
-    margin-right: 0;
   }
 }
 
