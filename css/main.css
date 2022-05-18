@@ -245,6 +245,11 @@ a {
   margin-right: auto;
   min-width: 480px;
 }
+@media screen and (min-width: 768) {
+  .hero {
+    padding: 118px 0 118px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0 200px;
@@ -264,7 +269,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    font-size: 30px;
+    font-size: 26px;
     max-width: 360px;
   }
 }
