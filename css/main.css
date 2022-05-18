@@ -432,6 +432,9 @@ a {
     width: 270px;
   }
 }
+.feature .feature__item:last-child {
+  margin-bottom: 0;
+}
 .feature .clock-icon {
   display: flex;
   justify-content: center;
