@@ -914,13 +914,13 @@ footer {
   .footer-mail {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-mail {
     align-items: baseline;
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 .mail-logo {
@@ -1012,7 +1012,7 @@ footer {
   justify-content: center;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-icon {
     margin-bottom: 0;
   }
@@ -1046,7 +1046,7 @@ footer {
   .mail-submit-form {
     display: flex;
     align-items: flex-end;
-    margin-left: auto;
+    margin-left: 93px;
   }
 }
 
