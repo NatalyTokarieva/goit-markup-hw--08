@@ -240,15 +240,10 @@ a {
 .hero {
   background-color: #2F303A;
   text-align: center;
-  padding-top: 118px;
   margin-left: auto;
   margin-right: auto;
   min-width: 480px;
-}
-@media screen and (min-width: 768) {
-  .hero {
-    padding: 118px 0 118px;
-  }
+  padding: 118px 0 118px;
 }
 @media screen and (min-width: 1200px) {
   .hero {
