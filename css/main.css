@@ -125,17 +125,17 @@ a {
 }
 
 .logotip-mobile {
-  padding-right: 284px;
+  margin-right: 284px;
 }
 
 @media screen and (min-width: 768px) {
   .logotip {
-    padding-right: 88px;
+    margin-right: 88px;
   }
 }
 @media screen and (min-width: 1200px) {
   .logotip {
-    padding-right: 93px;
+    margin-right: 93px;
   }
 }
 .header {
