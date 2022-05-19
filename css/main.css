@@ -698,20 +698,10 @@ a {
   }
 }
 .section-commands {
-  min-width: 480px;
+  max-width: 1600px;
   background-color: #F5F4FA;
-  margin-right: 0;
   margin-left: auto;
-}
-@media screen and (min-width: 768px) {
-  .section-commands {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section-commands {
-    max-width: 1200px;
-  }
+  margin-right: auto;
 }
 
 .section-commands-title {
