@@ -1,5 +1,7 @@
 .footer{
     min-width: 480px;
+    background-color: $primery-bg--color;
+
 }
 
 .footer-container{
@@ -20,18 +22,9 @@
     
       @media screen and (min-width: 1200px) {
         max-width: 1200px;
-        margin: 0 auto;
-
-      }
-     
-        
-    }
+        margin: 0 auto;}
+     }
 }
-
-footer{
-    background-color: $primery-bg--color;
-
- }
 
     @media screen and (min-width:768px) {
         .footer-mail{
@@ -88,7 +81,7 @@ footer{
 
 
    &__item:last-child{
-       margin-bottom: none;
+       margin-bottom: 0;
    }
     &__link{
         text-decoration: none;
@@ -108,7 +101,7 @@ footer{
         color: $connect-color;
         margin-bottom: 8px;
         @media screen and (min-width:1200px) {
-        margin-bottom:none;
+        margin-bottom:0;
         }
 
     }
@@ -130,15 +123,20 @@ footer{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $primery-background;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    margin-top: 60px;
     text-align: center;
 
     @media screen and (min-width:768px) {
+        margin-top: 0;
+        padding-top: 5px;
         margin-bottom: 20px;
         text-align: start;
     }
-
-    }
+    @media screen and (min-width:1200px) {
+      
+        padding-top: 5px;
+    }}
     
 .footer-icon{
         display: flex;
